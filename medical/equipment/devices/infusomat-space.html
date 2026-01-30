@@ -1,80 +1,442 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Infusomat Space — Quick Start</title>
+  <title>B. Braun Infusomat® Space — First-Use Guide</title>
+  <style>
+    :root{
+      --bg:#ffffff;
+      --fg:#111;
+      --muted:#555;
+      --line:#ddd;
+      --card:#f7f7f7;
+      --warn:#7a1d1d;
+      --ok:#155724;
+    }
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height:1.45;
+      color:var(--fg);
+      background:var(--bg);
+    }
+    main{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 20px 16px 60px;
+    }
+    h1{ margin: 6px 0 4px; font-size: 1.8rem; }
+    .subtitle{ margin:0 0 14px; color:var(--muted); }
+    .meta{
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin: 12px 0 18px;
+    }
+    .meta ul{ margin: 8px 0 0 18px; }
+    .notice{
+      border-left: 4px solid var(--warn);
+      background: #fff5f5;
+      padding: 10px 12px;
+      border-radius: 8px;
+      margin: 14px 0 18px;
+    }
+    .notice strong{ color: var(--warn); }
+    .nav{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin: 10px 0 16px;
+    }
+    .nav a{
+      text-decoration:none;
+      border: 1px solid var(--line);
+      padding: 8px 10px;
+      border-radius: 10px;
+      background:#fff;
+      color:#111;
+    }
+    .nav a:active{ transform: translateY(1px); }
+    details{
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fff;
+      margin: 10px 0;
+      overflow:hidden;
+    }
+    summary{
+      cursor:pointer;
+      padding: 12px 14px;
+      background: var(--card);
+      font-weight: 700;
+      list-style: none;
+    }
+    summary::-webkit-details-marker{ display:none; }
+    .section{
+      padding: 12px 14px 14px;
+    }
+    .section h3{
+      margin: 10px 0 6px;
+      font-size: 1.05rem;
+    }
+    .muted{ color: var(--muted); }
+    .callout{
+      border-left: 4px solid #444;
+      background: #fafafa;
+      padding: 10px 12px;
+      border-radius: 8px;
+      margin: 10px 0;
+    }
+    .callout.warn{
+      border-left-color: var(--warn);
+      background: #fff5f5;
+    }
+    .callout.ok{
+      border-left-color: var(--ok);
+      background: #f3fff6;
+    }
+    ol, ul{ margin: 8px 0 0 20px; }
+    li{ margin: 6px 0; }
+    code{
+      background:#f2f2f2;
+      padding: 1px 5px;
+      border-radius: 6px;
+    }
+    .grid{
+      display:grid;
+      gap:10px;
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 800px){
+      .grid{ grid-template-columns: 1fr 1fr; }
+    }
+    .small{ font-size: 0.95rem; }
+    .footer{
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
 </head>
 <body>
+  <main>
+    <div class="nav">
+      <a href="../index.html">← Back to Equipment</a>
+      <a href="../../laboratory.html">Medical → Laboratory</a>
+      <a href="../../pha.html">Medical → PHA</a>
+      <a href="../../index.html">Medical landing</a>
+    </div>
 
-  <h1>B. Braun Infusomat® Space</h1>
-  <p><strong>Type:</strong> Volumetric infusion pump (Space system).</p>
+    <h1>B. Braun Infusomat® Space</h1>
+    <p class="subtitle">Volumetric infusion pump (B. Braun Space system)</p>
 
-  <h2>Quick Start</h2>
-  <ol>
-    <li><strong>Power:</strong> Connect to AC power or confirm adequate battery, then power on.</li>
-    <li><strong>Pre-checks:</strong> Confirm correct profile/unit configuration for your site and verify self-test completes.</li>
-    <li><strong>Set/tubing:</strong> Use the correct Infusomat Space pump set. Prime per local policy.</li>
-    <li><strong>Load line:</strong> Open door, route tubing exactly as shown on the pump’s routing guides, ensure clamps/sensors are correctly engaged, then close/lock door.</li>
-    <li><strong>Program:</strong> Select therapy/mode as configured locally. Enter required parameters (commonly 2 of 3: rate/VTBI/time).</li>
-    <li><strong>Connect & start:</strong> Trace line to patient, confirm correct access, then press <strong>Start</strong>.</li>
-    <li><strong>Monitor:</strong> Verify flow, watch for alarms (occlusion/air/door/line issues), respond per on-screen message and local policy.</li>
-    <li><strong>Stop/end:</strong> Use stop/standby as trained; clamp as required; unload line per procedure.</li>
-  </ol>
+    <div class="meta">
+      <strong>What this page is for:</strong>
+      <ul>
+        <li><strong>First-time orientation + step-by-step use</strong> (someone who has never touched the pump before).</li>
+        <li>Practical “what to do” guidance with common errors and what they look like on the device.</li>
+      </ul>
+      <p class="muted small" style="margin:10px 0 0;">
+        This does <strong>not</strong> replace your site policy, training, or the manufacturer IFU. If anything conflicts: follow local policy + the IFU.
+      </p>
+    </div>
 
-  <h2>Common pitfalls</h2>
-  <ul>
-    <li>Incorrect tubing type (not an approved Infusomat Space set).</li>
-    <li>Misrouted tubing through guides/sensors → door/line alarms or inaccurate delivery.</li>
-    <li>Closed clamp/kink upstream → upstream occlusion alarms.</li>
-    <li>Not confirming correct profile/drug library configuration for your unit.</li>
-  </ul>
+    <div class="notice">
+      <strong>Safety baseline (read once):</strong>
+      This pump is designed for <strong>Infusomat Space dedicated pump sets</strong>. Using unapproved tubing/sets risks free-flow protection, accuracy, and alarm performance.
+      If you are not trained/authorized to operate infusion pumps in your environment, stop and get help.
+    </div>
 
-  <h2>Do’s and Don’ts</h2>
-  <ul>
-    <li><strong>Do</strong> trace the line end-to-end before starting.</li>
-    <li><strong>Do</strong> verify parameters on the run screen after pressing Start.</li>
-    <li><strong>Don’t</strong> bypass routing guides or force the door closed.</li>
-    <li><strong>Don’t</strong> use unapproved tubing/sets.</li>
-  </ul>
+    <!-- 1) ORIENTATION -->
+    <details open>
+      <summary>1) Orientation (what you’re looking at, before you press anything)</summary>
+      <div class="section">
+        <div class="grid">
+          <div>
+            <h3>Identify the key controls on the front panel</h3>
+            <ul>
+              <li><strong>Screen</strong> (left) — shows infusion status, settings, alarms.</li>
+              <li><strong>Navigation cluster</strong> (center) — arrow keys + <code>OK</code> to move through menus and confirm.</li>
+              <li><strong>Start/Stop</strong> button (right side cluster) — labeled <code>Start/Stop</code>.</li>
+              <li><strong>Power</strong> button (⏻ icon, right side cluster) — turns the pump on/off.</li>
+              <li><strong>Door / tubing channel</strong> — where the pump set is routed and secured (free-flow protection depends on correct loading).</li>
+            </ul>
+          </div>
+          <div>
+            <h3>What you should verify immediately</h3>
+            <ul>
+              <li>You have the <strong>correct device</strong> (Infusomat Space, not a syringe pump).</li>
+              <li>You have the <strong>correct pump set</strong> (approved Infusomat Space pump set; in date; packaging intact if required by policy).</li>
+              <li>The pump is either on a SpaceStation/docking system or can run on internal battery.</li>
+            </ul>
+            <div class="callout warn">
+              <strong>Do not “just start pressing buttons”</strong> until tubing is loaded correctly and you are ready to program a verified order.
+            </div>
+          </div>
+        </div>
+      </div>
+    </details>
 
-  <h2>Manufacturer info</h2>
-  <ul>
-    <li>
-      Product page:
-      <a href="https://catalogs.bbraun.com/en-01/p/PRID00001229/infusomat-space" target="_blank" rel="noopener">
-        Infusomat Space (B. Braun catalog)
-      </a>
-    </li>
-  </ul>
+    <!-- 2) POWER / READINESS -->
+    <details>
+      <summary>2) Power & readiness check (get to a safe starting state)</summary>
+      <div class="section">
+        <ol>
+          <li><strong>Connect to power if available.</strong> If docked on a SpaceStation, confirm it is seated properly.</li>
+          <li><strong>Turn the pump on:</strong> press the <strong>⏻ Power</strong> button (right cluster).</li>
+          <li><strong>Wait for self-test to complete.</strong> Watch the screen for completion and any prompts.</li>
+          <li><strong>Confirm you are in the correct profile/unit configuration</strong> (site-specific). If the device shows an unexpected profile/library, stop and escalate per local policy.</li>
+          <li><strong>Check battery/AC status icon</strong> on screen if you expect transport use.</li>
+        </ol>
 
-  <h2>Manuals (PDF)</h2>
-  <ul>
-    <li>
-      IFU (2nd gen PDF):
-      <a href="https://infusionpumps.prescottsmed.com/wp-content/uploads/2020/05/Infusomat-2nd-Gen_IFU1.pdf" target="_blank" rel="noopener">
-        Infusomat 2nd Gen IFU
-      </a>
-    </li>
-  </ul>
+        <div class="callout warn">
+          <strong>If you see an alarm immediately (before tubing is loaded):</strong>
+          don’t ignore it. Read the on-screen message, correct the cause (often door/tubing state/config), or swap the device and report to biomed if needed.
+        </div>
 
-  <h2>Videos</h2>
-  <ul>
-    <li>
-      YouTube overview:
-      <a href="https://www.youtube.com/watch?v=HZvVHyAV-0s" target="_blank" rel="noopener">
-        Equipment Spotlight — Infusomat Space
-      </a>
-    </li>
-    <li>
-      B. Braun training page:
-      <a href="https://www.bbraun.ie/en/products-and-solutions/therapies/infusion-therapy/training.html" target="_blank" rel="noopener">
-        Infusion Therapy Training (B. Braun)
-      </a>
-    </li>
-  </ul>
+        <div class="callout ok">
+          <strong>Good state to proceed:</strong> device powered, no active alarms, correct profile/library (if applicable), ready/standby screen visible.
+        </div>
+      </div>
+    </details>
 
-  <p><a href="../index.html">← Back to Equipment</a></p>
+    <!-- 3) TUBING -->
+    <details>
+      <summary>3) Tubing / line loading (highest-risk step — do it deliberately)</summary>
+      <div class="section">
+        <h3>Before loading</h3>
+        <ul>
+          <li>Confirm the <strong>order</strong> and the <strong>med/solution</strong>, concentration, and route per policy.</li>
+          <li>Use an <strong>approved Infusomat Space pump set</strong> (in date; correct type for therapy).</li>
+          <li>Prime the line <strong>per local policy</strong> (method varies by unit/therapy).</li>
+        </ul>
 
+        <h3>Loading sequence (generic but explicit)</h3>
+        <ol>
+          <li><strong>Stop/Standby:</strong> ensure infusion is not running (press <code>Start/Stop</code> if needed and confirm it is stopped).</li>
+          <li><strong>Open the pump door</strong> (use the door latch/handle as designed; do not force).</li>
+          <li><strong>Route the tubing exactly along the molded guides</strong> inside the door/channel.
+            <ul>
+              <li>Follow the printed/embossed routing diagram on the pump.</li>
+              <li>Ensure the tubing sits fully in the channel (no twists; no riding on the edge).</li>
+              <li>Ensure any required clamp/sensor segments are positioned as indicated by the device’s guides.</li>
+            </ul>
+          </li>
+          <li><strong>Confirm free-flow protection/clamp behavior</strong> visually as you close the door (your set + correct routing is what makes this protection work).</li>
+          <li><strong>Close the door firmly until it latches.</strong> If it won’t close easily, stop and re-seat tubing—do not force it.</li>
+        </ol>
+
+        <div class="callout warn">
+          <strong>Common “line won’t load / door won’t close” causes:</strong>
+          tubing not seated in the guide, wrong set type, a clamp segment positioned incorrectly, or tubing caught at the hinge/latch edge.
+        </div>
+
+        <div class="callout">
+          <strong>If the pump alarms after loading:</strong>
+          read the exact message and re-check (1) door fully latched, (2) tubing seated and routed correctly, (3) upstream clamp/roller clamp open, (4) no kinks.
+        </div>
+      </div>
+    </details>
+
+    <!-- 4) PROGRAMMING -->
+    <details>
+      <summary>4) Programming the infusion (enter parameters and verify them)</summary>
+      <div class="section">
+        <p class="muted small">
+          Exact menus vary by configuration (drug library, lock levels, profiles). The safe pattern is always:
+          <strong>select correct mode → enter required parameters → confirm summary → start → verify running screen.</strong>
+        </p>
+
+        <h3>Button-level basics</h3>
+        <ul>
+          <li><strong>Arrow keys</strong> move between fields/menus.</li>
+          <li><strong><code>OK</code></strong> confirms a selection/entry.</li>
+          <li><strong><code>Start/Stop</code></strong> starts or pauses/stops infusion (depending on configuration/prompt).</li>
+        </ul>
+
+        <h3>Programming workflow</h3>
+        <ol>
+          <li><strong>Select the therapy/mode</strong> required at your site (basic infusion vs drug library dose mode, if available).</li>
+          <li><strong>Enter ordered values</strong> using the navigation keys:
+            <ul>
+              <li>Commonly the pump expects <strong>2 of 3</strong>: <strong>Rate</strong>, <strong>VTBI</strong>, <strong>Time</strong> (and calculates the third).</li>
+              <li>In drug library modes, you may be entering dose-based parameters (site-dependent).</li>
+            </ul>
+          </li>
+          <li><strong>Stop and read the confirmation/summary screen</strong> before starting:
+            <ul>
+              <li>Verify: patient (if used), drug/solution, concentration (if applicable), rate, VTBI/time, line route/connection plan.</li>
+              <li>If anything looks wrong: back out and correct before starting.</li>
+            </ul>
+          </li>
+        </ol>
+
+        <div class="callout warn">
+          <strong>High-consequence error pattern:</strong> entering the “right numbers in the wrong units/mode.”
+          If your site uses drug libraries/profiles, confirm you are in the correct profile before trusting limits/prompts.
+        </div>
+      </div>
+    </details>
+
+    <!-- 5) CONNECT + START -->
+    <details>
+      <summary>5) Connect to patient & start infusion (verify it is actually running correctly)</summary>
+      <div class="section">
+        <ol>
+          <li><strong>Trace the line end-to-end</strong> (bag/syringe → pump → patient connection point) per policy.</li>
+          <li><strong>Confirm patient access</strong> (correct line/port; patency checks per policy).</li>
+          <li><strong>Connect to the patient</strong> and ensure any required clamps are in the correct position for infusion.</li>
+          <li><strong>Press <code>Start/Stop</code></strong> to start infusion (confirm any prompt shown).</li>
+          <li><strong>Immediately verify on the run screen</strong>:
+            <ul>
+              <li>Status shows running (not standby/stopped).</li>
+              <li>Rate/VTBI/time reflect what you intended.</li>
+              <li>No active alarm banner is present.</li>
+            </ul>
+          </li>
+          <li><strong>Observe the first 30–60 seconds</strong> for occlusion/air/door/line alarms and correct as needed.</li>
+        </ol>
+
+        <div class="callout warn">
+          <strong>If an occlusion alarm triggers right away:</strong>
+          think “clamp closed / kink / wrong port / upstream issue” before assuming a device fault.
+        </div>
+      </div>
+    </details>
+
+    <!-- 6) PAUSE / STOP / END -->
+    <details>
+      <summary>6) Pause / stop / end (and unload safely)</summary>
+      <div class="section">
+        <ol>
+          <li><strong>Pause/Stop:</strong> press <code>Start/Stop</code> and follow on-screen prompt(s) (site behavior varies).</li>
+          <li><strong>Clamp at the patient</strong> if required by your unit policy before disconnecting/changing the set.</li>
+          <li><strong>Unload:</strong> open the door and remove tubing carefully without forcing any components.</li>
+          <li><strong>End-of-therapy:</strong> document per policy; dispose/retain the set as required.</li>
+        </ol>
+
+        <div class="callout">
+          <strong>Transport reminder:</strong> if moving the patient, confirm battery status and secure the pump/lines to prevent accidental pull or kinking.
+        </div>
+      </div>
+    </details>
+
+    <!-- PITFALLS -->
+    <details>
+      <summary>Common pitfalls (what goes wrong most often)</summary>
+      <div class="section">
+        <ul>
+          <li><strong>Wrong tubing/set</strong> (not an approved Infusomat Space pump set) → unreliable operation / alarms / safety feature failures.</li>
+          <li><strong>Door won’t close</strong> → tubing not seated in the channel, routed incorrectly, or wrong set type.</li>
+          <li><strong>Immediate occlusion alarms</strong> → upstream clamp closed, kinked tubing, wrong patient port, downstream obstruction.</li>
+          <li><strong>Upstream occlusion / closed clamp</strong> → roller clamp left closed, bag/line issue before pump.</li>
+          <li><strong>Parameter errors</strong> → wrong mode/profile, wrong units, skipped summary verification.</li>
+          <li><strong>Assuming “Start” means running</strong> → actually still in standby/stopped due to a prompt or alarm.</li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- DOs / DON'Ts -->
+    <details>
+      <summary>Do’s & Don’ts (short safety rules)</summary>
+      <div class="section">
+        <div class="grid">
+          <div>
+            <h3>Do</h3>
+            <ul>
+              <li>Do use only approved Infusomat Space pump sets (in date).</li>
+              <li>Do trace the line end-to-end before starting.</li>
+              <li>Do verify the run screen after pressing <code>Start/Stop</code>.</li>
+              <li>Do stop and read alarm text — fix the cause, don’t guess.</li>
+              <li>Do confirm you’re in the correct profile/library (site-specific).</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Don’t</h3>
+            <ul>
+              <li>Don’t force the door closed.</li>
+              <li>Don’t bypass routing guides or clamp mechanisms.</li>
+              <li>Don’t “copy settings” from memory without verifying mode/units.</li>
+              <li>Don’t ignore upstream clamps/roller clamps when troubleshooting occlusion alarms.</li>
+              <li>Don’t use unapproved tubing/sets.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <!-- VIDEOS -->
+    <details>
+      <summary>Videos (manufacturer-first, then a reputable third-party)</summary>
+      <div class="section">
+        <ul>
+          <li>
+            <strong>B. Braun training page (Space / Infusomat content)</strong><br/>
+            <a href="https://www.bbraun.ie/en/products-and-solutions/therapies/infusion-therapy/training.html" target="_blank" rel="noopener">https://www.bbraun.ie/en/products-and-solutions/therapies/infusion-therapy/training.html</a>
+          </li>
+          <li>
+            <strong>YouTube (overview/demo — verify against your configuration)</strong><br/>
+            <a href="https://www.youtube.com/watch?v=HZvVHyAV-0s" target="_blank" rel="noopener">https://www.youtube.com/watch?v=HZvVHyAV-0s</a>
+          </li>
+        </ul>
+        <p class="muted small">
+          Videos are helpful for “what it looks like,” but always follow your local policy and the IFU for the definitive process.
+        </p>
+      </div>
+    </details>
+
+    <!-- MANUFACTURER / IFU LINKS -->
+    <details open>
+      <summary>Manufacturer info & references (official pages first)</summary>
+      <div class="section">
+        <h3>Official product pages</h3>
+        <ul>
+          <li>
+            <strong>B. Braun catalog page (product info)</strong><br/>
+            <a href="https://catalogs.bbraun.com/en-01/p/PRID00001229/infusomat-space" target="_blank" rel="noopener">
+              https://catalogs.bbraun.com/en-01/p/PRID00001229/infusomat-space
+            </a>
+          </li>
+          <li>
+            <strong>B. Braun USA product page</strong><br/>
+            <a href="https://www.bbraunusa.com/en/products/b4/infusomat-space-largevolumepump.html" target="_blank" rel="noopener">
+              https://www.bbraunusa.com/en/products/b4/infusomat-space-largevolumepump.html
+            </a>
+          </li>
+          <li>
+            <strong>Infusomat Space pump sets (approved disposables info)</strong><br/>
+            <a href="https://www.bbraunusa.com/en/products/b/infusomat-space-pumpsets.html" target="_blank" rel="noopener">
+              https://www.bbraunusa.com/en/products/b/infusomat-space-pumpsets.html
+            </a>
+          </li>
+        </ul>
+
+        <h3>Instructions for Use (IFU) PDFs (use the version matching your pump/labeling)</h3>
+        <ul>
+          <li>
+            <a href="https://infusionpumps.prescottsmed.com/wp-content/uploads/2020/05/Infusomat-2nd-Gen_IFU1.pdf" target="_blank" rel="noopener">
+              Infusomat “2nd Gen” IFU (PDF)
+            </a>
+          </li>
+          <li>
+            <a href="https://pharmadom.ch/wp-content/uploads/2020/09/Braun-Infusomat-Space-P-ANGLAIS-Mode-emploi-complet.pdf" target="_blank" rel="noopener">
+              Infusomat Space P IFU (PDF)
+            </a>
+          </li>
+        </ul>
+
+        <div class="callout warn">
+          <strong>Important:</strong> IFU links above are hosted outside your repo. If you need guaranteed access offline or behind restricted networks,
+          download the IFU PDF and store it in your GitHub repo (then link to your local copy).
+        </div>
+      </div>
+    </details>
+
+    <p class="footer">
+      Last updated: <script>document.write(new Date().toISOString().slice(0,10));</script>
+    </p>
+  </main>
 </body>
 </html>
