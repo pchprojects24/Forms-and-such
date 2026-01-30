@@ -1,1 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZOLL Propaq® MD — Quick Use Guide</title>
+  <style>
+    :root{
+      --bg:#ffffff;
+      --fg:#111;
+      --muted:#555;
+      --line:#ddd;
+      --card:#f7f7f7;
+      --warn:#7a1d1d;
+      --ok:#155724;
+    }
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height:1.45;
+      color:var(--fg);
+      background:var(--bg);
+    }
+    main{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 20px 16px 60px;
+    }
+    h1{ margin: 6px 0 4px; font-size: 1.8rem; }
+    .subtitle{ margin:0 0 14px; color:var(--muted); }
+    .nav{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin: 10px 0 16px;
+    }
+    .nav a{
+      text-decoration:none;
+      border: 1px solid var(--line);
+      padding: 8px 10px;
+      border-radius: 10px;
+      background:#fff;
+      color:#111;
+    }
+    .nav a:active{ transform: translateY(1px); }
 
+    .meta{
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin: 12px 0 18px;
+    }
+    .meta ul{ margin: 8px 0 0 18px; }
+
+    details{
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fff;
+      margin: 10px 0;
+      overflow:hidden;
+    }
+    summary{
+      cursor:pointer;
+      padding: 12px 14px;
+      background: var(--card);
+      font-weight: 700;
+      list-style: none;
+    }
+    summary::-webkit-details-marker{ display:none; }
+    .section{ padding: 12px 14px 14px; }
+    .muted{ color: var(--muted); }
+    .small{ font-size: 0.95rem; }
+
+    .callout{
+      border-left: 4px solid #444;
+      background: #fafafa;
+      padding: 10px 12px;
+      border-radius: 8px;
+      margin: 10px 0;
+    }
+    .callout.warn{
+      border-left-color: var(--warn);
+      background: #fff5f5;
+    }
+    .callout.ok{
+      border-left-color: var(--ok);
+      background: #f3fff6;
+    }
+
+    ol, ul{ margin: 8px 0 0 20px; }
+    li{ margin: 6px 0; }
+
+    .grid{
+      display:grid;
+      gap:10px;
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 800px){
+      .grid{ grid-template-columns: 1fr 1fr; }
+    }
+
+    .footer{ margin-top: 18px; color: var(--muted); font-size: 0.95rem; }
+    code{ background:#f2f2f2; padding: 1px 5px; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="nav">
+      <a href="../index.html">← Back to Equipment</a>
+      <a href="../../../index.html">← Back to main</a>
+    </div>
+
+    <h1>ZOLL Propaq® MD</h1>
+    <p class="subtitle">Transport monitor/defibrillator with synchronized cardioversion + transcutaneous pacing (SurePower™ II battery system)</p>
+
+    <div class="meta">
+      <strong>How to use this page:</strong>
+      <ul>
+        <li>Open the section for the mode you need (Monitoring / Manual Defib / Sync Cardioversion / Pacing / Battery).</li>
+        <li>Follow the step sequence and the “critical checks.”</li>
+        <li>Use manufacturer links/videos at the bottom for deeper detail.</li>
+      </ul>
+      <p class="muted small" style="margin:10px 0 0;">
+        This is a field-friendly operational guide. Always follow your unit policy and the ZOLL operator materials for definitive instructions.
+      </p>
+    </div>
+
+    <!-- QUICK START BY MODE -->
+    <details open>
+      <summary>Monitoring only (ECG / SpO₂ / NIBP / EtCO₂)</summary>
+      <div class="section">
+        <h3>When to use</h3>
+        <ul>
+          <li>Any patient requiring monitoring without immediate shock or pacing.</li>
+          <li>Transport / observation / procedural monitoring.</li>
+        </ul>
+
+        <h3>Controls to recognize</h3>
+        <ul>
+          <li><strong>ON/OFF selector</strong>: rotary control (turn from OFF to MONITOR/DEFIB depending on your unit).</li>
+          <li><strong>Navigation knob</strong>: rotary/push knob to select menus and adjust values.</li>
+          <li><strong>Soft keys / quick-access keys</strong>: screen-adjacent keys for common functions (Lead, Alarms, NIBP, Print, Setup—varies).</li>
+          <li><strong>NIBP start/stop</strong>: dedicated button or soft-key depending on configuration.</li>
+        </ul>
+
+        <h3>Step-by-step (basic monitoring)</h3>
+        <ol>
+          <li><strong>Power:</strong> insert a charged SurePower II battery (or connect external power if available), then turn ON/OFF selector to power on.</li>
+          <li><strong>ECG:</strong> connect ECG cable → apply electrodes to clean/dry skin → select lead/display as needed.</li>
+          <li><strong>SpO₂:</strong> plug in sensor → apply to well-perfused site → confirm waveform/number stabilizes.</li>
+          <li><strong>NIBP:</strong> select correct cuff size → connect hose → apply snug to bare limb at heart level → press NIBP start.</li>
+          <li><strong>EtCO₂ (if equipped):</strong> connect line/module → attach to airway adapter/cannula → confirm waveform.</li>
+          <li><strong>Alarms:</strong> open Alarm Limits → confirm patient category (adult/ped/neo if used) → set limits appropriate to patient.</li>
+        </ol>
+
+        <div class="callout warn">
+          <strong>Critical checks:</strong> confirm correct patient category/alarm defaults; confirm clean ECG waveform (replace electrodes if noisy);
+          fix NIBP errors by re-positioning cuff/limb before repeating; confirm adequate battery for transport.
+        </div>
+
+        <div class="callout">
+          <strong>Post-use:</strong> stop NIBP cycling; disconnect disposables per infection control; wipe device per approved cleaning guidance.
+        </div>
+      </div>
+    </details>
+
+    <details>
+      <summary>Manual defibrillation (VF / pulseless VT — manual control)</summary>
+      <div class="section">
+        <h3>When to use</h3>
+        <ul>
+          <li>VF / pulseless VT when operating in manual mode per your resuscitation workflow.</li>
+        </ul>
+
+        <h3>Controls to recognize</h3>
+        <ul>
+          <li><strong>Energy select</strong>: soft key + navigation knob (varies by configuration).</li>
+          <li><strong>CHARGE</strong>: button/soft key (varies).</li>
+          <li><strong>SHOCK</strong>: guarded orange button (front panel) or on therapy control (config-dependent).</li>
+          <li><strong>Pads/therapy connection</strong>: ensure multifunction pads/cable are connected and recognized.</li>
+        </ul>
+
+        <h3>Step-by-step (manual shock)</h3>
+        <ol>
+          <li><strong>Mode:</strong> turn selector to DEFIB/manual therapy mode (as labeled on your unit).</li>
+          <li><strong>Pads:</strong> apply approved ZOLL multifunction pads (anterior-lateral or AP as appropriate) and connect therapy cable.</li>
+          <li><strong>Rhythm check:</strong> confirm shockable rhythm per protocol.</li>
+          <li><strong>Select energy:</strong> set energy per local protocol.</li>
+          <li><strong>Charge:</strong> press CHARGE and wait for “charged” indicator/tone.</li>
+          <li><strong>Clear:</strong> ensure no one is touching patient/bed/rails; announce and verify “all clear.”</li>
+          <li><strong>Shock:</strong> press and hold SHOCK until delivered.</li>
+          <li><strong>Immediately resume CPR</strong> and follow your rhythm-check cycle.</li>
+        </ol>
+
+        <div class="callout warn">
+          <strong>Critical checks:</strong> confirm pads contact/impedance is acceptable (no “check pads”); confirm you are NOT in SYNC for VF/pulseless VT;
+          if charge times out/disarms, re-charge before attempting shock.
+        </div>
+      </div>
+    </details>
+
+    <details>
+      <summary>Synchronized cardioversion (organized rhythm with pulse)</summary>
+      <div class="section">
+        <h3>When to use</h3>
+        <ul>
+          <li>Unstable tachyarrhythmias with an organized QRS where synchronized shock is indicated.</li>
+        </ul>
+
+        <h3>Controls to recognize</h3>
+        <ul>
+          <li><strong>SYNC</strong>: soft key/button enabling synchronization.</li>
+          <li><strong>R-wave markers</strong>: on-screen indicators that must align with QRS complexes.</li>
+        </ul>
+
+        <h3>Step-by-step (sync cardioversion)</h3>
+        <ol>
+          <li><strong>Mode:</strong> enter DEFIB/manual therapy mode.</li>
+          <li><strong>Pads:</strong> ensure pads connected; ensure ECG trace is clean and QRS is obvious.</li>
+          <li><strong>Enable SYNC:</strong> press SYNC and confirm SYNC indicator + markers over each R wave.</li>
+          <li><strong>Select energy:</strong> per local protocol.</li>
+          <li><strong>Charge:</strong> press CHARGE and confirm “charged.”</li>
+          <li><strong>Clear:</strong> “all clear” check.</li>
+          <li><strong>Shock:</strong> press and hold SHOCK; device delivers on next appropriate R wave.</li>
+          <li><strong>Reassess:</strong> rhythm + patient status; repeat as clinically indicated.</li>
+        </ol>
+
+        <div class="callout warn">
+          <strong>Critical checks:</strong> SYNC may turn off after shock or mode change—confirm SYNC before each attempt.
+          Ensure markers align with QRS (not T waves); adjust lead/gain/filter if needed.
+        </div>
+      </div>
+    </details>
+
+    <details>
+      <summary>Transcutaneous pacing (TCP)</summary>
+      <div class="section">
+        <h3>When to use</h3>
+        <ul>
+          <li>Symptomatic bradycardia with poor perfusion when pacing is indicated per your protocols.</li>
+        </ul>
+
+        <h3>Controls to recognize</h3>
+        <ul>
+          <li><strong>PACE</strong>: pacing mode selection.</li>
+          <li><strong>RATE</strong> and <strong>mA (current)</strong>: adjusted via soft keys + navigation knob.</li>
+          <li><strong>Start/Stop pacing</strong>: on-screen control in pacing panel (varies).</li>
+        </ul>
+
+        <h3>Step-by-step (TCP)</h3>
+        <ol>
+          <li><strong>Pads + ECG:</strong> ensure multifunction pads connected and ECG monitoring is active.</li>
+          <li><strong>Enter pacing mode:</strong> press PACE to open pacing controls.</li>
+          <li><strong>Set rate:</strong> select pacing rate per local protocol.</li>
+          <li><strong>Set current:</strong> start at a reasonable initial output (per local practice) and be prepared to increase.</li>
+          <li><strong>Start pacing:</strong> start pacing and observe pacing spikes on ECG.</li>
+          <li><strong>Increase to capture:</strong> increase mA until <strong>electrical capture</strong> then confirm <strong>mechanical capture</strong> (pulse/BP response).</li>
+          <li><strong>Monitor:</strong> reassess capture and patient response; document thresholds per policy.</li>
+        </ol>
+
+        <div class="callout warn">
+          <strong>Critical checks:</strong> confirm mechanical capture (not just spikes/QRS). Poor pad contact/impedance can prevent capture.
+          TCP is often uncomfortable—manage analgesia/sedation per your local practice.
+        </div>
+      </div>
+    </details>
+
+    <details>
+      <summary>Power & SurePower™ II battery management</summary>
+      <div class="section">
+        <h3>Power on/off</h3>
+        <ol>
+          <li>Insert SurePower II battery until it seats/locks.</li>
+          <li>Turn selector from OFF to ON/MONITOR/DEFIB (label varies) and allow self-test to complete.</li>
+          <li>To power off, ensure patient is safely transferred/alternate monitoring arranged, then turn selector back to OFF.</li>
+        </ol>
+
+        <h3>Battery status (on the battery pack)</h3>
+        <ul>
+          <li>Use the battery’s <strong>display button</strong> to show LED runtime bars (and any fault/recalibration indicators).</li>
+          <li>Before transport/mission: verify at least one good battery (no fault indicator) and adequate runtime indication.</li>
+        </ul>
+
+        <div class="callout warn">
+          <strong>Common failure mode:</strong> deploying with a weak/unmaintained battery → low-battery alarms or unexpected shutdown.
+          Make battery checks part of routine readiness.
+        </div>
+      </div>
+    </details>
+
+    <!-- DO / DON'T + PITFALLS -->
+    <details open>
+      <summary>Do’s & Don’ts</summary>
+      <div class="section">
+        <div class="grid">
+          <div>
+            <h3>Do</h3>
+            <ul>
+              <li>Do confirm patient category/alarm limits at start of case (adult/ped/neo if used).</li>
+              <li>Do ensure pads/leads/sensors are firmly connected and waveforms are clean before acting on them.</li>
+              <li>Do verify “RUNNING/CHARGED/SYNC” indicators on-screen (don’t assume).</li>
+              <li>Do check battery status before transport and keep a spare available when possible.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Don’t</h3>
+            <ul>
+              <li>Don’t cardiovert without confirming SYNC markers over R waves.</li>
+              <li>Don’t deliver therapy with “check pads/leads off” unresolved.</li>
+              <li>Don’t assume pacing spikes = perfusion; confirm mechanical capture.</li>
+              <li>Don’t ignore repeated NIBP errors—reapply cuff/limb or change site.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <details>
+      <summary>Common pitfalls (fast troubleshooting cues)</summary>
+      <div class="section">
+        <h3>Lead / cable problems</h3>
+        <ul>
+          <li>Noisy ECG: dry/loose electrodes, poor skin prep, movement — replace electrodes and re-prep skin.</li>
+          <li>Intermittent SpO₂: low perfusion, motion, poor sensor fit — reposition and warm limb if possible.</li>
+        </ul>
+
+        <h3>SYNC errors</h3>
+        <ul>
+          <li>SYNC turned off after shock/mode change — confirm before each cardioversion attempt.</li>
+          <li>Markers on T waves or inconsistent — change lead, adjust gain/filter, improve electrode contact.</li>
+        </ul>
+
+        <h3>Charge / shock delivery issues</h3>
+        <ul>
+          <li>Energy disarms after delay — re-confirm “charged” and re-charge if needed.</li>
+          <li>High impedance (“check pads”) — re-seat/replace pads, dry skin, remove heavy hair if needed.</li>
+        </ul>
+
+        <h3>Battery failures</h3>
+        <ul>
+          <li>Unexpected low battery — verify battery LEDs before use; rotate/maintain packs per your local schedule.</li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- RESOURCES -->
+    <details open>
+      <summary>Manufacturer resources, manuals, and videos (links)</summary>
+      <div class="section">
+        <h3>Official ZOLL pages & PDFs</h3>
+        <ul>
+          <li>
+            Propaq MD product page:
+            <a href="https://www.zoll.com/en-us/products/emergency-care/monitors-and-defibrillators/propaq-md" target="_blank" rel="noopener">
+              zoll.com Propaq MD
+            </a>
+          </li>
+          <li>
+            Spec sheet (PDF, ZOLL):
+            <a href="https://www.zoll.com/-/media/LegacyMedia/uploadedfiles/public_site/products/propaq_md/propaqmdspecsheet-pdf.ashx" target="_blank" rel="noopener">
+              Propaq MD spec sheet
+            </a>
+          </li>
+          <li>
+            Product materials portal (manuals / guides / videos):
+            <a href="https://www.zoll.com/en-us/education-and-resources/product-materials" target="_blank" rel="noopener">
+              ZOLL Product Materials
+            </a>
+          </li>
+          <li>
+            Cleaning instructions (PDF, ZOLL):
+            <a href="https://info.zoll.com/hubfs/COVID-19/PropaqMD_CleaningInstructions.pdf" target="_blank" rel="noopener">
+              Propaq MD cleaning instructions
+            </a>
+          </li>
+        </ul>
+
+        <h3>Videos</h3>
+        <ul>
+          <li>
+            Propaq MD synchronized cardioversion (YouTube):
+            <a href="https://www.youtube.com/watch?v=Wh3qgHtCJ9o" target="_blank" rel="noopener">
+              https://www.youtube.com/watch?v=Wh3qgHtCJ9o
+            </a>
+          </li>
+        </ul>
+
+        <div class="callout">
+          Tip: if you need an operator guide PDF, use the ZOLL “Product Materials” portal above and select:
+          <code>Product Manuals / Operators' Guides</code> → <code>Propaq® MD</code> → language/region.
+        </div>
+      </div>
+    </details>
+
+    <p class="footer">Last updated: <script>document.write(new Date().toISOString().slice(0,10));</script></p>
+  </main>
+</body>
+</html>
